@@ -1,0 +1,43 @@
+PROGRAM practica2;
+VAR
+	n1,n2:real;
+	x,y:char;
+	z: BYTE;
+BEGIN
+	writeln ('****************************************************');
+	writeln ('  Autor:David Sanchez Gonzalez');
+	writeln ('****************************************************');
+	writeln;
+	writeln ('********************   REALES   ********************');
+	writeln	('Introduzca el primer real positivo: ');
+	readln	(n1);
+	writeln	('Introduzca el segundo real negativo: ');
+	readln	(n2);
+	writeln;
+	writeln	('     ',n1:4:2,'  +  ', n2:4:2, '  =    ', n1+n2:4:2);
+	writeln	('     ',n1:4:2,'  -  ', n2:4:2, '  =    ', n1-n2:4:2);
+	writeln	('     ',n1:4:2,'  *  ', n2:4:2, '  =  ', n1*n2:4:2);
+	writeln	('     ',n1:4:2,'  /  ', n2:4:2, '  =    ', n1/n2:4:2);
+	writeln ('El valor absoluto de  ', n2:4:2, ' es:    ',(abs(n2)):4:2);
+	writeln ('El cuadrado de  ', n1:4:2, ' es:   ',(sqr(n1)):4:2);
+	writeln ('La raiz cuadrada de  ', n1:4:2, ' es: 	 ',(sqrt(n1)):4:2);
+	writeln	('El redondeo de  ', n2:4:2, ' es: ',round(n2));
+	writeln ('El truncamiento de  ', n2:4:2, ' es: ',trunc(n2));
+	readln;
+
+	writeln('********************   CARACTERES   ******************');
+	writeln	('Introduzca un caracter de la tabla ASCII: ');
+	readln	(x);
+	writeln	('Introduzca otro caracter de la tabla ASCII: ');
+	readln	(y);
+	writeln	('Introduzca un valor de la tabla ASCII: ');
+	readln	(z);
+	writeln;
+	writeln	('El ordinal del primer caracter ', x, ' es: ',ord(x));
+	writeln	('El ordinal del segundo caracter ', y, ' es: ',ord(y));
+	writeln ('La diferencia de ordinales entre los dos caracteres es: ', ord(x)-ord(y));
+	writeln ('El sucesor de ', x, ' es: ',succ(x));
+	writeln ('El predecesor de ', y, ' es:  ',pred(y));
+	writeln ('El caracter asociado a ', x, ' es:  ',chr(z));
+	readln;
+END.
